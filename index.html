@@ -1,95 +1,136 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Dianya Ltd</title><!-- Framework CSS -->
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection" />
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print" /><!-- Site Specific CSS -->
-<link rel="stylesheet" href="css/theme.css" type="text/css" media="screen, projection" /><!--[if IE]>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Dianya Ltd</title><!-- Framework CSS -->
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
+    <!-- Site Specific CSS -->
+    <link rel="stylesheet" href="css/theme.css" type="text/css" media="screen, projection"/>
+    <!--[if IE]>
 <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<script type="text/javascript" src="js/corners.js"></script>
-<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
-<script type="text/javascript">
-	DD_roundies.addRule('.navlink a, .navlinkactive a', '5px 5px 0 0', true);
-	DD_roundies.addRule('p.link a', '15px', true);
-</script>
-<script language="javascript">
-$(document).ready(function(){
+    <script language="javascript" type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <script type="text/javascript" src="js/corners.js"></script>
+    <script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+    <script type="text/javascript">
+        DD_roundies.addRule('.navlink a, .navlinkactive a', '5px 5px 0 0', true);
+        DD_roundies.addRule('p.link a', '15px', true);
+    </script>
+    <script language="javascript">
+        $(document).ready(function () {
 
-	$("#nav").jFlow({
-		slides: "#slides",
-		controller: ".navlink", // must be class, use . sign
-		slideWrapper : "#jFlowSlide", // must be id, use # sign
-		selectedWrapper: "navlinkactive",  // just pure text, no sign
-		width: "100%",
-		height: "390px",
-		duration: 400,
-		prev: ".jFlowPrev", // must be class, use . sign
-		next: ".jFlowNext" // must be class, use . sign
-	});
+            $("#nav").jFlow({
+                slides:"#slides",
+                controller:".navlink", // must be class, use . sign
+                slideWrapper:"#jFlowSlide", // must be id, use # sign
+                selectedWrapper:"navlinkactive", // just pure text, no sign
+                width:"100%",
+                height:"390px",
+                duration:400,
+                prev:".jFlowPrev", // must be class, use . sign
+                next:".jFlowNext" // must be class, use . sign
+            });
 
-});
-</script>
+        });
+    </script>
 </head>
 <body>
 <div class="wrap">
-<div class="container header">
-<h1>Dianya Ltd</h1><!--h3>Tag ligne</h3--></div>
-<div class="container content">
-<ul id="nav">
-<li class="navlink"><a href="#welcome" title="Welcome">Welcome</a></li>
-<li class="navlink"><a href="#about" title="About">Emeka Mosanya</a></li>
-<li class="navlink"><a href="#contact" title="Contact">Contact</a></li></ul>
-<div id="slides">
-<div class="welcome slide">
-<div class="span-22 append-1 prepend-1">
-<h3>Welcome</h3>
-<div class="span-11">
-<p>Welcome to Dianya Ltd, a small IT consultancy company that represents Emeka Mosanya, a senior freelance software engineer.</p>
-<p>  Dianya Ltd and its Belgian sister company have provided professional IT consultancy and development service since 2000.  Our clients have included Ubicall Communications S.A., Belgacom Mobile S.A., Algorithmics Inc. In addition, Emeka worked at Goldman Sachs International.</p>
-<p>You will be in good company.</p>
-<p> We provide full lifecycle professional software engineering services; business analysis, system design and implementation, testing and documentation. We love a mix of challenging technical programming and business facing situation.</p></div>
-<div class="span-11 last">
-<p>We are expert in the following technologies:</p>
-<ul>
-<li>Java server side programming (J2EE, Multi-Threading, JMS, Spring)</li>
-<li>Web (XHTML, CSS, Javascript)</li>
-<li>XML (XML, XSL, Schema, XPath)</li>
-<li>Relational Databases</li></ul></div></div></div>
-<div class="about slide">
-<div class="span-22 append-1 prepend-1">
-<h3>Emeka Mosanya</h3>
-<div class="span-11">
-<p>Emeka is an Electrical Engineer and holds a Ph.D. in Computer Science from the Swiss Federal Institute of Technology in Lausanne.  He has been developing software for more than 20 years and also developed custom processors.  Emeka has several scientific publications.</p>
-<p>Emeka is a problem solver and a agile programming zealot. </p>
-<p>Here are some of the technologies that Emeka has used:</p>
-<ul>
-<li>Java, J2EE, Spring, Hibernate, Tapestry, eMule</li>
-<li>XML, XSL, XPath, (X)HTML, CSS</li>
-<li>C/C++, Forth, Slang, SecDB</li>
-<li>VHDL</li></ul></div>	
-<div class="span-11 last">
-<p>When he is not hardworking for his Customers, he enjoys:</p>
-<ul>
-<li>Scuba diving</li>
-<li>Filmmaking</li>
-<li>Traveling</li></ul>
-<p>He speaks:</p>
-<ul>
-<li>English</li>
-<li>French</li>
-<li>Some Spanish</li></ul></div></div></div>
-<div class="contact slide">
-<div class="span-22 append-1 prepend-1">
-<div class="span-11 append-1">
-<h3>Contact</h3>
-<ul>
-<li>Email: emeka@dianya.com</li>
-<li>Tel: +44 77 26738996</li></ul></div></div></div></div></div></div>
+    <div class="container header">
+        <h1>Dianya Ltd</h1><!--h3>Tag ligne</h3--></div>
+    <div class="container content">
+        <ul id="nav">
+            <li class="navlink"><a href="#welcome" title="Welcome">Welcome</a></li>
+            <li class="navlink"><a href="#about" title="About">Emeka Mosanya</a></li>
+            <li class="navlink"><a href="#contact" title="Contact">Contact</a></li>
+        </ul>
+        <div id="slides">
+            <div class="welcome slide">
+                <div class="span-22 append-1 prepend-1">
+                    <h3>Welcome</h3>
+
+                    <div class="span-11">
+                        <p>Welcome to Dianya, an independent IT consultancy.</p>
+
+                        <p> Dianya provides professional IT consultancy and development service for more than a decade.
+                            We are proud to have contributed to the success of Ubicall Communications S.A., Belgacom
+                            Mobile S.A., Algorithmics Inc, RSA and Financial Times.</p>
+
+                        <p>You will be in good company.</p>
+
+                        <p>We love a mix of challenging technical programming, operation automation and business facing
+                            situation. We will help you achieving your goals.</p>
+
+                        <p>We frequently collaborate with the good people of <a href="opencredo.com">OpenCredo</a>.</p>
+                    </div>
+                    <div class="span-11 last">
+                        <p>Our current focus is reducing our customers time to market by helping them taking full
+                            advantage of virtualisation, automatic Java build pipeline and system delivery. The
+                            technology we use daily are: </p>
+                        <ul>
+                            <li>Server side Java</li>
+                            <li>Virtualisation</li>
+                            <li>Puppet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about slide">
+                <div class="span-22 append-1 prepend-1">
+                    <h3>Emeka Mosanya</h3>
+
+                    <div class="span-11">
+                        <p>Emeka is an Electrical Engineer and holds a Ph.D. in Computer Science from the Swiss Federal
+                            Institute of Technology in Lausanne. He has been developing software for more than 20 years
+                            and also developed custom processors. Emeka has several scientific publications.</p>
+
+                        <p>Emeka is a problem solver, follows agile principles and delivers running code. </p>
+
+                        <p>Here are some of the technologies that Emeka has used:</p>
+                        <ul>
+                            <li>Java, J2EE, Spring, Hibernate, Tapestry, eMule</li>
+                            <li>XML, XSL, XPath, (X)HTML, CSS</li>
+                            <li>C/C++, Forth, Slang, SecDB</li>
+                            <li>VHDL</li>
+                        </ul>
+                    </div>
+                    <div class="span-11 last">
+                        <p>When he is not hardworking for his Customers, he enjoys:</p>
+                        <ul>
+                            <li>Scuba diving</li>
+                            <li>Filmmaking</li>
+                            <li>Traveling</li>
+                        </ul>
+                        <p>He speaks:</p>
+                        <ul>
+                            <li>English</li>
+                            <li>French</li>
+                            <li>Some Spanish</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contact slide">
+                <div class="span-22 append-1 prepend-1">
+                    <div class="span-11 append-1">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>Email: emeka@dianya.com</li>
+                            <li>Tel: +44 77 26738996</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container footer">
-<div class="span-22 append-1">
-<p><strong>Copyright (c) 2009, Dianya Ltd, all rights reserved.</strong></p>
-<p>Registered in England and Wales with the No. 06061194. Registered office: 37 Warren Street, London W1T 6AD.</p></div></div>
+    <div class="span-22 append-1">
+        <p><strong>Copyright (c) 2009-2012, Dianya Ltd, all rights reserved.</strong></p>
+
+        <p>Registered in England and Wales with the No. 06061194. Registered office: 37 Warren Street, London W1T
+            6AD.</p></div>
+</div>
 </body>
 </html>
